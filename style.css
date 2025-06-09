@@ -1,0 +1,249 @@
+* {
+    font-family: roboto, sans-serif;
+}
+
+.largeIcon {
+    height: 60px;
+    width: auto;
+}
+.smallIcon {
+    height: 40px;
+    width: auto;
+}
+img {
+    height: 25px;
+    width: auto;
+}
+.alarm {
+    height: 35px;
+    width: auto;
+    padding-right: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 9fr;
+    height: 120vh;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: rgb(7, 157, 226);
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr 5fr;
+}
+
+.sidebarHeader {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.dashboardIcon {
+    height: 35px;
+    width: auto;
+}
+
+.dashboardText {
+    font-size: large;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu {
+    display: gird;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.menuOption, .helpOption {
+    display: flex;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.menuText, 
+.helpText,
+.dashboardText{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-left: 20px;
+    /* border: solid red; */
+}
+
+.sidebarHeader, .menu, .help {
+    margin-left: 30px;
+}
+
+
+
+.header {
+    grid-column: 2;
+    grid-row: 1;
+    /* border: solid red; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3); 
+}
+
+.firstLine {
+    display: flex;
+    /* border: solid red; */
+    grid-row: 1;
+    align-items: center;
+}
+.firstLeft {
+    flex: 3;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    height: 40%;
+    width: 60%;
+    background-color: rgba(205, 218, 233, 0.45);
+    border-radius: 10px;
+    border: solid rgba(205, 218, 233, 0.45);
+}
+
+.firstRight {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.firstLine>div {
+    display: flex;
+}
+
+.firstLine>div>div {
+    margin: 10px;
+}
+
+.secondLine {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    gap: 25px;
+    grid-row: 2;
+    align-items: center;
+    /* border: solid red; */
+    /* margin-bottom: 10px; */
+}
+
+.greet {
+    display: flex;
+    padding: 10px;
+}
+
+.greetText {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+button {
+    background-color: rgb(7, 157, 226);
+    color: white;
+    border: rgb(7, 157, 226);
+    border-radius: 15px;
+    font-size: large;
+    padding: 5px;
+}
+
+.content {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(205, 218, 233, 0.45);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr 20fr;
+    padding: 10px;
+    gap: 20px;
+    overflow: auto;
+}
+
+.projectHeader {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.anHeader {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.projectCards {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 10px;
+    /* border: solid red; */
+}
+
+.cards {
+    background-color: white;
+    border-left: solid orange;
+    border-left-width: 5px;
+    border-radius: 10px;;
+    padding: 30px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-rows: 1fr 0.1fr;
+}
+
+.cIcons {
+    justify-self: end;
+}
+.cardIcon {
+    padding: 10px;
+}
+.anCards {
+    grid-column: 2;
+    grid-row: 2; 
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.announcements {
+    display: inline-block;
+    border-bottom: solid rgba(205, 218, 233, 0.45);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.tHeader {
+    grid-column: 2;
+    grid-row: 3; 
+}
+
+.tCards {
+    grid-column: 2;
+    grid-row: 4; 
+    background-color: white;
+    border-radius: 10px;
+    display: gird;
+    grid-template-rows: repeat(4, 1fr);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.user {
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+}
+.user>div {
+    margin-left: 10px;
+}
+
